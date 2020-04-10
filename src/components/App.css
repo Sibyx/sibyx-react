@@ -1,0 +1,16 @@
+.SocialLink {
+	display: inline-flex;
+	justify-content: center;
+	margin: 5px;
+}
+
+.SocialLink a {
+	text-decoration: none;
+	color: lightgray;
+	display: flex;
+}
+
+.SocialLink a:hover {
+	color: gray;
+}
+

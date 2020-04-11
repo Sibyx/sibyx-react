@@ -1,12 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './components/App';
+import Landing from './components/Landing';
 import * as serviceWorker from './serviceWorker';
+
+require('typeface-nunito');
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Landing />
   </React.StrictMode>,
   document.getElementById('root')
 );

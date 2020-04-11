@@ -1,20 +1,34 @@
 import React from 'react';
-import './App.css';
+import './Landing.css';
 import styled from "@emotion/styled";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faAt, faCoffee} from "@fortawesome/free-solid-svg-icons";
+import {faEnvelope} from "@fortawesome/free-solid-svg-icons";
 import {faFacebook, faGithub} from "@fortawesome/free-brands-svg-icons";
+import Portrait from "./Portrait";
 
 const OuterContainer = styled.div`
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
-  flex-direction: row;
-  height: 78vh;
 `;
 
-const Container = styled.div`
+const PortraitContainer = styled.div`
+  flex: 1;
+  height: 100vh;
+  width: 50vw;
+  overflow: hidden;
+  vertical-align:top;
+  horiz-align: right;
+  text-align: right;
+`;
+
+const AboutContainer = styled.div`
+  flex: 1;
+  width: 50vw;
+  overflow: scroll;
   text-align: center;
+  horiz-align: center;
 `;
 
 const Description = styled.p`
@@ -27,6 +41,7 @@ const Description = styled.p`
 const NameHeader = styled.h1`
   font-size: 3.5rem;
   margin-bottom: 0;
+  margin-top: 0;
   flex-grow: 1;
 `;
 
@@ -41,6 +56,7 @@ const SocialList = styled.ul`
 class SocialLink extends React.Component {
   render() {
     return <li className={'SocialLink'}>
+      {/* eslint-disable-next-line react/jsx-no-target-blank */}
       <a href={this.props.href} target={'_blank'}>
         <FontAwesomeIcon icon={this.props.icon} size="2x"/>
       </a>
@@ -48,20 +64,24 @@ class SocialLink extends React.Component {
   }
 }
 
-function App() {
+function Landing() {
   return (
-    <OuterContainer>
-      <Container>
+    <OuterContainer classNmae={'OuterContainer'}>
+      <PortraitContainer className={'PortraitContainer'}>
+        <Portrait/>
+      </PortraitContainer>
+      <AboutContainer className={'AboutContainer'}>
         <NameHeader>Jakub Dubec</NameHeader>
         <Description>Software developer</Description>
         <SocialList>
           <SocialLink href={'https://github.com/Sibyx'} icon={faGithub}>Github</SocialLink>
           <SocialLink href={'https://www.facebook.com/dubecj'} icon={faFacebook}>Facebook</SocialLink>
-          <SocialLink href={'mailto:jakub.dubec@gmail.com'} icon={faAt}>E-Mail</SocialLink>
+          <SocialLink href={'mailto:jakub.dubec@gmail.com'} icon={faEnvelope}>E-Mail</SocialLink>
         </SocialList>
-      </Container>
+      </AboutContainer>
     </OuterContainer>
   );
 }
 
-export default App;
+
+export default Landing;

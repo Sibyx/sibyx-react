@@ -14,3 +14,12 @@
 	color: gray;
 }
 
+@media (max-width: 800px) {
+	.PortraitContainer {
+		display: none;
+	}
+
+	.AboutContainer h1 {
+		margin-top: 40vh;
+	}
+}

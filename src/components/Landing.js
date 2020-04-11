@@ -26,7 +26,7 @@ const PortraitContainer = styled.div`
 const AboutContainer = styled.div`
   flex: 1;
   width: 50vw;
-  overflow: scroll;
+  overflow: hidden;
   text-align: center;
   horiz-align: center;
 `;

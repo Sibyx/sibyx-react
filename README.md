@@ -1,4 +1,6 @@
 # Personal Portfolio
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FSibyx%2Fsibyx-react.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2FSibyx%2Fsibyx-react?ref=badge_shield)
+
 
 My personal static blog / portfolio based on [React](https://reactjs.org/)
 
@@ -12,3 +14,6 @@ My personal static blog / portfolio based on [React](https://reactjs.org/)
 
 ---
 With ❤️ Jakub Dubec
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FSibyx%2Fsibyx-react.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2FSibyx%2Fsibyx-react?ref=badge_large)

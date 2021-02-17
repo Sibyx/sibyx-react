@@ -3,7 +3,7 @@ import './Landing.css';
 import styled from "@emotion/styled";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faEnvelope} from "@fortawesome/free-solid-svg-icons";
-import {faDev, faFacebook, faGithub, faLinkedinIn, faSpotify} from "@fortawesome/free-brands-svg-icons";
+import {faFacebook, faGithub, faLastfm, faLinkedinIn, faSpotify} from "@fortawesome/free-brands-svg-icons";
 import Portrait from "./Portrait";
 
 const OuterContainer = styled.div`
@@ -81,7 +81,8 @@ function Landing() {
           <SocialLink href={'https://open.spotify.com/user/1164505516?si=DKeMd50RRL-sBFwjdz-5NQ'} icon={faSpotify}>
             Spotify
           </SocialLink>
-          <SocialLink href={'https://dev.to/sibyx'} icon={faDev}>DEV</SocialLink>
+          {/*<SocialLink href={'https://dev.to/sibyx'} icon={faDev}>DEV</SocialLink>*/}
+          <SocialLink href={'https://www.last.fm/user/Sibyx'} icon={faLastfm}>Last.fm</SocialLink>
         </SocialList>
       </AboutContainer>
     </OuterContainer>

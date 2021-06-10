@@ -3,7 +3,7 @@ import './Landing.css';
 import styled from "@emotion/styled";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faEnvelope} from "@fortawesome/free-solid-svg-icons";
-import {faFacebook, faGithub, faLastfm, faLinkedinIn, faSpotify} from "@fortawesome/free-brands-svg-icons";
+import {faFacebook, faGithub, faLastfm, faLinkedinIn, faSpotify, faResearchgate} from "@fortawesome/free-brands-svg-icons";
 import Portrait from "./Portrait";
 
 const OuterContainer = styled.div`
@@ -75,6 +75,9 @@ function Landing() {
         <Description>Software developer</Description>
         <SocialList>
           <SocialLink href={'https://github.com/Sibyx'} icon={faGithub}>Github</SocialLink>
+          <SocialLink href={'https://www.researchgate.net/profile/Jakub_Dubec'} icon={faResearchgate}>
+            ResearchGate
+          </SocialLink>
           <SocialLink href={'https://www.facebook.com/dubecj'} icon={faFacebook}>Facebook</SocialLink>
           <SocialLink href={'mailto:jakub.dubec@gmail.com'} icon={faEnvelope}>E-Mail</SocialLink>
           <SocialLink href={'https://www.linkedin.com/in/jdubec/'} icon={faLinkedinIn}>LinkedIn</SocialLink>
